@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;600;700&family=Young+Serif&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{  
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-Raspberry: hsl(332, 51%, 32%);   
+    --white: hsl(0, 0%, 100%);
+    --rose-White: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-Grey: hsl(30, 18%, 87%);
+    --wenge-Brown: hsl(30, 10%, 34%);
+    --dark-Charcoal: hsl(24, 5%, 18%);
+    --young-Serif-font:"Young Serif", serif;
+    --Outfit: "Outfit", sans-serif;
+}
+img{
+    max-width: 100%;
+    border-radius: 13px;
+}
+body{
+    background-color: var(--eggshell);
+}
+h1{
+    font-size: 30px;
+    font-family: var(--young-Serif-font);
+    color: var(--dark-Charcoal);
+}
+h2{
+    font-family: var(--young-Serif-font);
+    color: var(--nutmeg);
+}
+h3{
+    font-family: var(--young-Serif-font);
+    color: var(--nutmeg); 
+}
+p{
+    font-size: 16px;
+    font-family: var(--Outfit);
+    color: var(--wenge-Brown);
+    font-weight: 400;
+}
+b{
+    font-family: var(--Outfit);
+    color: var(--wenge-Brown);
+}
+.container{
+    max-width: 740px;
+    padding: 40px;
+    background-color: var(--white);
+    margin: 130px auto;
+    display: flex;
+    flex-direction: column;
+    gap:45px ;
+    border-radius: 18px;
+    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+}
+.Recipe{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Preparation{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 35px 30px;
+    background-color: var(--rose-White);
+    border-radius: 15px;
+}
+.Preparation ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 18px;
+}
+.Preparation ul li::marker{
+    color: var(--wenge-Brown);
+}
+span{
+    font-weight: 700;
+}
+.Ingredients{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.Ingredients ul{
+    padding-left: 20px;
+}
+.Ingredients ul li{
+    margin-bottom: 25px;
+}
+.Ingredients ul li::marker{
+    color: var(--wenge-Brown);
+}
+.line{
+    border-top: 1.5px solid var(--light-Grey);
+}
+.Instructions{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.Instructions ol{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+.Instructions ol li::marker{
+    color: var(--wenge-Brown);
+    font-weight: 600;
+    font-family: var(--Outfit);
+}
+.Nutrition{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.last{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0 35px;
+    
+}
+@media(max-width:375px){
+    body{
+        background-color:var(--white);
+    }
+    .container{
+        max-width: 740px;
+        padding: 30px;
+        margin: auto;
+        box-shadow: none;
+        border-radius: none;
+    }
+}
